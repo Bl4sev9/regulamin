@@ -50,9 +50,32 @@
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
-            width: 100%;
         }
 
+        .footer a {
+            color: #0af;
+            text-decoration: none;
+        }
+
+        header img {
+            height: 58px; /* Fixed height for the image */
+            object-fit: contain; /* Keeps aspect ratio */
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+    
+        .footer img {
+            height: 30px; /* Set height to match footer size */
+            width: auto; /* Maintain aspect ratio */
+            vertical-align: middle; /* Align image with text */
+            transition: transform 0.3s ease;
+        }
+
+        .footer img:hover {
+            transform: scale(1.2);
+        }
         .footer a {
             color: #0af;
             text-decoration: none;
@@ -117,7 +140,15 @@
     </div>
 
     <footer class="footer">
-        <p>&copy;RushCup <a href="https://discord.gg/UjxWHdudGs" target="_blank">Contact Us</a></p>
+          <p>&copy;RushCup <a href="https://discord.gg/UjxWHdudGs" target="_blank"> Support </a> 
+            <a href="" target="_blank"><img src="igpng.png"> </a>
+            <a href="https://discord.gg/q9U8P75HYj" target="_blank"><img src="dc.png"> </a>
+            <a href="https://x.com" target="_blank"><img src="x.png"> </a>
+            <a href="https://youtube.com" target="_blank"><img src="yt.png"> </a>
+            <a href="https://tiktok.com" target="_blank"><img src="tt.png"> </a>
+
+        
+        </p>
     </footer>
 </body>
 </html>
